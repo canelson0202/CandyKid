@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1427EFFC25312FCC0001A0C2 /* CandyKidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427EFFB25312FCC0001A0C2 /* CandyKidApp.swift */; };
+		1427EFFE25312FCC0001A0C2 /* HomeBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427EFFD25312FCC0001A0C2 /* HomeBaseView.swift */; };
+		1427F00025312FCD0001A0C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1427EFFF25312FCD0001A0C2 /* Assets.xcassets */; };
+		1427F00325312FCD0001A0C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1427F00225312FCD0001A0C2 /* Preview Assets.xcassets */; };
+		1427F00D25313CF60001A0C2 /* CandyBagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F00C25313CF60001A0C2 /* CandyBagView.swift */; };
+		1427F01025313FF70001A0C2 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F00F25313FF70001A0C2 /* Candy.swift */; };
+		1427F013253141520001A0C2 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F012253141520001A0C2 /* House.swift */; };
+		1427F0322531445C0001A0C2 /* CandyKidNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F0312531445C0001A0C2 /* CandyKidNetworking.swift */; };
+		1427F03725316DFF0001A0C2 /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F03625316DFF0001A0C2 /* HouseView.swift */; };
+		142B2D6825423ADB009DFDFB /* ParticlesEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B2D6725423ADB009DFDFB /* ParticlesEmitter.swift */; };
+		1480E98325437543009C6050 /* HouseSelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 14D0366E2533BC030060C2E0 /* HouseSelection.intentdefinition */; };
+		1480E98A25437543009C6050 /* HouseSelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 14D0366E2533BC030060C2E0 /* HouseSelection.intentdefinition */; };
+		148D395E254CB2B400810FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1427EFFF25312FCD0001A0C2 /* Assets.xcassets */; };
+		148D395F254CB2B400810FB5 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F00F25313FF70001A0C2 /* Candy.swift */; };
+		148D3960254CB2B400810FB5 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F012253141520001A0C2 /* House.swift */; };
+		148D3961254CB2B400810FB5 /* CandyKidNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F0312531445C0001A0C2 /* CandyKidNetworking.swift */; };
+		148D396E254CB71400810FB5 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F012253141520001A0C2 /* House.swift */; };
+		148D396F254CB71400810FB5 /* CandyKidNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F0312531445C0001A0C2 /* CandyKidNetworking.swift */; };
+		148D3970254CB71400810FB5 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427F00F25313FF70001A0C2 /* Candy.swift */; };
+		14D036492532C2CC0060C2E0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D036482532C2CC0060C2E0 /* WidgetKit.framework */; };
+		14D0364B2532C2CC0060C2E0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D0364A2532C2CC0060C2E0 /* SwiftUI.framework */; };
+		14D036502532C2CF0060C2E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D0364F2532C2CF0060C2E0 /* Assets.xcassets */; };
+		14D036542532C2CF0060C2E0 /* CandyKidWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14D036462532C2CC0060C2E0 /* CandyKidWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14D0366B253371270060C2E0 /* HouseTrackerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D0366A253371270060C2E0 /* HouseTrackerWidget.swift */; };
+		14D0366F2533BC030060C2E0 /* HouseSelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 14D0366E2533BC030060C2E0 /* HouseSelection.intentdefinition */; };
+		14D036792533D29E0060C2E0 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D036782533D29E0060C2E0 /* IntentHandler.swift */; };
+		14D0367D2533D29E0060C2E0 /* CandyKidIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14D036762533D29E0060C2E0 /* CandyKidIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14D036522532C2CF0060C2E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1427EFF025312FCB0001A0C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14D036452532C2CC0060C2E0;
+			remoteInfo = CandyKidWidgetExtension;
+		};
+		14D0367B2533D29E0060C2E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1427EFF025312FCB0001A0C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14D036752533D29E0060C2E0;
+			remoteInfo = CandyKidIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14D036582532C2CF0060C2E0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				14D036542532C2CF0060C2E0 /* CandyKidWidgetExtension.appex in Embed App Extensions */,
+				14D0367D2533D29E0060C2E0 /* CandyKidIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1427EFF825312FCC0001A0C2 /* CandyKid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandyKid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1427EFFB25312FCC0001A0C2 /* CandyKidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyKidApp.swift; sourceTree = "<group>"; };
+		1427EFFD25312FCC0001A0C2 /* HomeBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseView.swift; sourceTree = "<group>"; };
+		1427EFFF25312FCD0001A0C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1427F00225312FCD0001A0C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1427F00425312FCD0001A0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1427F00C25313CF60001A0C2 /* CandyBagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyBagView.swift; sourceTree = "<group>"; };
+		1427F00F25313FF70001A0C2 /* Candy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
+		1427F012253141520001A0C2 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		1427F0312531445C0001A0C2 /* CandyKidNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyKidNetworking.swift; sourceTree = "<group>"; };
+		1427F034253146A90001A0C2 /* CandyKid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CandyKid.entitlements; sourceTree = "<group>"; };
+		1427F03625316DFF0001A0C2 /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
+		142B2D6725423ADB009DFDFB /* ParticlesEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesEmitter.swift; sourceTree = "<group>"; };
+		14D036462532C2CC0060C2E0 /* CandyKidWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CandyKidWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		14D036482532C2CC0060C2E0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		14D0364A2532C2CC0060C2E0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		14D0364F2532C2CF0060C2E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14D036512532C2CF0060C2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D0365B2532C42C0060C2E0 /* CandyKidWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CandyKidWidgetExtension.entitlements; sourceTree = "<group>"; };
+		14D0366A253371270060C2E0 /* HouseTrackerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTrackerWidget.swift; sourceTree = "<group>"; };
+		14D0366E2533BC030060C2E0 /* HouseSelection.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HouseSelection.intentdefinition; sourceTree = "<group>"; };
+		14D036762533D29E0060C2E0 /* CandyKidIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CandyKidIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		14D036782533D29E0060C2E0 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		14D0367A2533D29E0060C2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D0369B2533D62A0060C2E0 /* CandyKidIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CandyKidIntent.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1427EFF525312FCB0001A0C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14D036432532C2CC0060C2E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D0364B2532C2CC0060C2E0 /* SwiftUI.framework in Frameworks */,
+				14D036492532C2CC0060C2E0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14D036732533D29E0060C2E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1427EFEF25312FCB0001A0C2 = {
+			isa = PBXGroup;
+			children = (
+				1427EFFA25312FCC0001A0C2 /* CandyKid */,
+				14D0364C2532C2CC0060C2E0 /* CandyKidWidget */,
+				14D036772533D29E0060C2E0 /* CandyKidIntent */,
+				14D036472532C2CC0060C2E0 /* Frameworks */,
+				1427EFF925312FCC0001A0C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1427EFF925312FCC0001A0C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1427EFF825312FCC0001A0C2 /* CandyKid.app */,
+				14D036462532C2CC0060C2E0 /* CandyKidWidgetExtension.appex */,
+				14D036762533D29E0060C2E0 /* CandyKidIntent.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1427EFFA25312FCC0001A0C2 /* CandyKid */ = {
+			isa = PBXGroup;
+			children = (
+				1427F034253146A90001A0C2 /* CandyKid.entitlements */,
+				1427EFFB25312FCC0001A0C2 /* CandyKidApp.swift */,
+				14D0363F2532C04E0060C2E0 /* Views */,
+				14D036402532C05E0060C2E0 /* Models */,
+				14D036412532C06E0060C2E0 /* Utilities */,
+				1427EFFF25312FCD0001A0C2 /* Assets.xcassets */,
+				1427F00425312FCD0001A0C2 /* Info.plist */,
+				1427F00125312FCD0001A0C2 /* Preview Content */,
+			);
+			path = CandyKid;
+			sourceTree = "<group>";
+		};
+		1427F00125312FCD0001A0C2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1427F00225312FCD0001A0C2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14D0363F2532C04E0060C2E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1427F00C25313CF60001A0C2 /* CandyBagView.swift */,
+				1427EFFD25312FCC0001A0C2 /* HomeBaseView.swift */,
+				1427F03625316DFF0001A0C2 /* HouseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14D036402532C05E0060C2E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1427F00F25313FF70001A0C2 /* Candy.swift */,
+				1427F012253141520001A0C2 /* House.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14D036412532C06E0060C2E0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1427F0312531445C0001A0C2 /* CandyKidNetworking.swift */,
+				142B2D6725423ADB009DFDFB /* ParticlesEmitter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		14D036472532C2CC0060C2E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14D036482532C2CC0060C2E0 /* WidgetKit.framework */,
+				14D0364A2532C2CC0060C2E0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14D0364C2532C2CC0060C2E0 /* CandyKidWidget */ = {
+			isa = PBXGroup;
+			children = (
+				14D0365B2532C42C0060C2E0 /* CandyKidWidgetExtension.entitlements */,
+				14D0366A253371270060C2E0 /* HouseTrackerWidget.swift */,
+				14D0366E2533BC030060C2E0 /* HouseSelection.intentdefinition */,
+				14D0364F2532C2CF0060C2E0 /* Assets.xcassets */,
+				14D036512532C2CF0060C2E0 /* Info.plist */,
+			);
+			path = CandyKidWidget;
+			sourceTree = "<group>";
+		};
+		14D036772533D29E0060C2E0 /* CandyKidIntent */ = {
+			isa = PBXGroup;
+			children = (
+				14D0369B2533D62A0060C2E0 /* CandyKidIntent.entitlements */,
+				14D036782533D29E0060C2E0 /* IntentHandler.swift */,
+				14D0367A2533D29E0060C2E0 /* Info.plist */,
+			);
+			path = CandyKidIntent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1427EFF725312FCB0001A0C2 /* CandyKid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1427F00725312FCD0001A0C2 /* Build configuration list for PBXNativeTarget "CandyKid" */;
+			buildPhases = (
+				1427EFF425312FCB0001A0C2 /* Sources */,
+				1427EFF525312FCB0001A0C2 /* Frameworks */,
+				1427EFF625312FCB0001A0C2 /* Resources */,
+				14D036582532C2CF0060C2E0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14D036532532C2CF0060C2E0 /* PBXTargetDependency */,
+				14D0367C2533D29E0060C2E0 /* PBXTargetDependency */,
+			);
+			name = CandyKid;
+			productName = CandyKid;
+			productReference = 1427EFF825312FCC0001A0C2 /* CandyKid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14D036452532C2CC0060C2E0 /* CandyKidWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14D036552532C2CF0060C2E0 /* Build configuration list for PBXNativeTarget "CandyKidWidgetExtension" */;
+			buildPhases = (
+				14D036422532C2CC0060C2E0 /* Sources */,
+				14D036432532C2CC0060C2E0 /* Frameworks */,
+				14D036442532C2CC0060C2E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CandyKidWidgetExtension;
+			productName = CandyKidWidgetExtension;
+			productReference = 14D036462532C2CC0060C2E0 /* CandyKidWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		14D036752533D29E0060C2E0 /* CandyKidIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14D0367E2533D29E0060C2E0 /* Build configuration list for PBXNativeTarget "CandyKidIntent" */;
+			buildPhases = (
+				14D036722533D29E0060C2E0 /* Sources */,
+				14D036732533D29E0060C2E0 /* Frameworks */,
+				14D036742533D29E0060C2E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CandyKidIntent;
+			productName = CandyKidIntent;
+			productReference = 14D036762533D29E0060C2E0 /* CandyKidIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1427EFF025312FCB0001A0C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1427EFF725312FCB0001A0C2 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					14D036452532C2CC0060C2E0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					14D036752533D29E0060C2E0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 1427EFF325312FCB0001A0C2 /* Build configuration list for PBXProject "CandyKid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1427EFEF25312FCB0001A0C2;
+			productRefGroup = 1427EFF925312FCC0001A0C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1427EFF725312FCB0001A0C2 /* CandyKid */,
+				14D036452532C2CC0060C2E0 /* CandyKidWidgetExtension */,
+				14D036752533D29E0060C2E0 /* CandyKidIntent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1427EFF625312FCB0001A0C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1427F00325312FCD0001A0C2 /* Preview Assets.xcassets in Resources */,
+				1427F00025312FCD0001A0C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14D036442532C2CC0060C2E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148D395E254CB2B400810FB5 /* Assets.xcassets in Resources */,
+				14D036502532C2CF0060C2E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14D036742533D29E0060C2E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1427EFF425312FCB0001A0C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1427F0322531445C0001A0C2 /* CandyKidNetworking.swift in Sources */,
+				1427EFFE25312FCC0001A0C2 /* HomeBaseView.swift in Sources */,
+				142B2D6825423ADB009DFDFB /* ParticlesEmitter.swift in Sources */,
+				1427F01025313FF70001A0C2 /* Candy.swift in Sources */,
+				1427F00D25313CF60001A0C2 /* CandyBagView.swift in Sources */,
+				1427F03725316DFF0001A0C2 /* HouseView.swift in Sources */,
+				1427F013253141520001A0C2 /* House.swift in Sources */,
+				1427EFFC25312FCC0001A0C2 /* CandyKidApp.swift in Sources */,
+				1480E98325437543009C6050 /* HouseSelection.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14D036422532C2CC0060C2E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D0366B253371270060C2E0 /* HouseTrackerWidget.swift in Sources */,
+				148D395F254CB2B400810FB5 /* Candy.swift in Sources */,
+				148D3960254CB2B400810FB5 /* House.swift in Sources */,
+				148D3961254CB2B400810FB5 /* CandyKidNetworking.swift in Sources */,
+				14D0366F2533BC030060C2E0 /* HouseSelection.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14D036722533D29E0060C2E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1480E98A25437543009C6050 /* HouseSelection.intentdefinition in Sources */,
+				148D3970254CB71400810FB5 /* Candy.swift in Sources */,
+				148D396E254CB71400810FB5 /* House.swift in Sources */,
+				148D396F254CB71400810FB5 /* CandyKidNetworking.swift in Sources */,
+				14D036792533D29E0060C2E0 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14D036532532C2CF0060C2E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14D036452532C2CC0060C2E0 /* CandyKidWidgetExtension */;
+			targetProxy = 14D036522532C2CF0060C2E0 /* PBXContainerItemProxy */;
+		};
+		14D0367C2533D29E0060C2E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14D036752533D29E0060C2E0 /* CandyKidIntent */;
+			targetProxy = 14D0367B2533D29E0060C2E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1427F00525312FCD0001A0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1427F00625312FCD0001A0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1427F00825312FCD0001A0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CandyKid/CandyKid.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"CandyKid/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CandyKid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CandyKid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1427F00925312FCD0001A0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CandyKid/CandyKid.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"CandyKid/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CandyKid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CandyKid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14D036562532C2CF0060C2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CandyKidWidget/CandyKidWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CandyKidWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CandyKid.CandyKidWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14D036572532C2CF0060C2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CandyKidWidget/CandyKidWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CandyKidWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CandyKid.CandyKidWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14D0367F2533D29E0060C2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CandyKidIntent/CandyKidIntent.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CandyKidIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CandyKid.CandyKidIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14D036802533D29E0060C2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CandyKidIntent/CandyKidIntent.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CandyKidIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CandyKid.CandyKidIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1427EFF325312FCB0001A0C2 /* Build configuration list for PBXProject "CandyKid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1427F00525312FCD0001A0C2 /* Debug */,
+				1427F00625312FCD0001A0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1427F00725312FCD0001A0C2 /* Build configuration list for PBXNativeTarget "CandyKid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1427F00825312FCD0001A0C2 /* Debug */,
+				1427F00925312FCD0001A0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14D036552532C2CF0060C2E0 /* Build configuration list for PBXNativeTarget "CandyKidWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14D036562532C2CF0060C2E0 /* Debug */,
+				14D036572532C2CF0060C2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14D0367E2533D29E0060C2E0 /* Build configuration list for PBXNativeTarget "CandyKidIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14D0367F2533D29E0060C2E0 /* Debug */,
+				14D036802533D29E0060C2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1427EFF025312FCB0001A0C2 /* Project object */;
+}
