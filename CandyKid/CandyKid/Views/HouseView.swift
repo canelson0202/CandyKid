@@ -121,24 +121,14 @@ struct HouseView: View {
         animateCandy()
         updateCandyBag()
 
+        // TODO: reload the candy bag widget
+        WidgetCenter.shared.reloadTimelines(ofKind: "CandyBagWidget")
+
         neighborhood[houseIndex].currentStock -= 1
 
         // Check if the house is out of candy
         if neighborhood[houseIndex].currentStock <= 0 {
             updateHouseRestockTime()
-
-            // TODO: reload the house tracker widget
-            WidgetCenter.shared.getCurrentConfigurations { result in
-                guard case .success(let widgets) = result else { return }
-
-                if let widget = widgets.first(where: { widget in
-                    let intent = widget.configuration as? HouseSelectionIntent
-                    return intent?.house?.number?.intValue == houseIndex
-                }) {
-                    WidgetCenter.shared.reloadTimelines(ofKind: widget.kind)
-                }
-            }
-
         } else {
             CandyKidNetworking.saveNeighborhood(neighborhood: neighborhood)
             buttonEnabled = true

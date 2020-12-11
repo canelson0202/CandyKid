@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct CandyBagView: View {
-    @Environment(\.presentationMode) private var presentationMode
     @Binding var candyBag: [Candy: Int]
 
     var keys: [Candy] {
-        return candyBag.keys
-            .map { $0 }
-            .sorted { c1, c2 in
-                candyBag[c1] ?? 0 >= candyBag[c2] ?? 0
-            }
+        return candyBag.keys.map { $0 }
     }
 
     var body: some View {
@@ -25,10 +20,7 @@ struct CandyBagView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
-                .opacity(0.7)
-//            Color.black
-//                .opacity(0.8)
-//                .edgesIgnoringSafeArea(.all)
+                .opacity(0.8)
 
             VStack {
 //                Spacer(minLength: 32)
@@ -39,33 +31,16 @@ struct CandyBagView: View {
 //                    .foregroundColor(.black)
 
 //                Spacer(minLength: 32)
-                HStack {
-                    Spacer(minLength: 340)
-                    Button(action: { self.presentationMode.wrappedValue.dismiss() }, label: {
-                        Text("Done")
-                            .bold()
-                            .padding(5)
-                            .background(Color.white)
-                            .foregroundColor(.black)
-                            .cornerRadius(10.0)
-                    })
-                    Spacer()
-                }
 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(alignment: .center, spacing: 16) {
                         ForEach(keys) { key in
                             HStack(spacing: 0) {
-//                                Text(key.name)
-//                                    .font(.title2)
-//                                    .bold()
-//                                    .foregroundColor(.black)
-//                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                key.image
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(maxWidth: .infinity, maxHeight: 100)
-                                    .clipped()
+                                Text(key.name)
+                                    .font(.title2)
+                                    .bold()
+                                    .foregroundColor(.black)
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
 
                                 Text("\(self.candyBag[key] ?? 0)")
                                     .font(.title)
